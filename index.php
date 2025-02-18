@@ -1,8 +1,9 @@
 <?php
 session_start();
+include 'includes/header.php';
 $path = 'pages/';
 $pageTitle = "Accueil";
-include 'includes/header.php';
+
 $username = isset($_SESSION['user']) ? $_SESSION['user']['username'] : 'Invité';
 ?>
 <h1>Bienvenue, <?php echo htmlspecialchars($username); ?>!</h1>

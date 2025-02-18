@@ -3,7 +3,9 @@
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
+$path = '';
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
