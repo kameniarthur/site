@@ -1,4 +1,5 @@
 <?php
+$path = '';
 require_once '../includes/require_login.php'; // Vérifie que l'utilisateur est connecté
 require_once '../includes/Epreuves.php';
 $pageTitle = "Uploader une épreuve"; // Pour le titre de la page
