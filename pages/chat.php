@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once '../includes/require_login.php';
 require_once '../includes/Message.php';
 require_once '../includes/db.php';
@@ -92,3 +93,4 @@ $otherUserId = isset($_GET['user_id']) ? (int)$_GET['user_id'] : 0;
 <?php endif; ?>
 
 <?php include '../includes/footer.php'; ?>
+<?php ob_end_flush(); ?>

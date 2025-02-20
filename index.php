@@ -1,7 +1,8 @@
 <?php
 session_start();
-include 'includes/header.php';
 $path = 'pages/';
+include 'includes/header.php';
+
 $pageTitle = "Accueil";
 
 $username = isset($_SESSION['user']) ? $_SESSION['user']['username'] : 'Invité';
